@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main_inner.css">
+<link rel="stylesheet" href="css/div.line1.css">
+<link rel="stylesheet" href="css/dl.mode1.css">
+<style>
+dt{position: relative;}
+dl{margin-bottom: .1rem;}
+input.solo{margin: .15rem .3rem;display: block;height: .3rem;line-height: .3rem;border-radius: .15rem;border: 1px solid rgba(211,211,211,1);text-indent: .3rem;}
+#pic{height: 100%;background: url(images/img.jpg);-webkit-background-size: 100%;background-size: 100%;}
+div.solo{width: 100%;padding: .3rem .1rem;position: absolute;bottom: 0;-webkit-justify-content:space-between;justify-content:space-between;display: -webkit-flex;}
+div.solo.s{display: -webkit-flex}
+div.solo input{display: block;width: 1.4rem;height: .4rem;line-height: .4rem;border-radius: .05rem;border: 1px solid rgba(242,42,26,1);text-align: center;}
+div.solo input:nth-of-type(1){background: rgba(242,42,26,1);color: #fff}
+.dle{width: 100%;height: 100%;background: rgba(0,0,0,.5);position: absolute;left: 0;top: 0;}
+.dle span{width: .2rem;height: .2rem;position: absolute;right: 0;top: 0;background: rgba(242,42,26,1);line-height: .2rem;text-align: center;color: #fff;border-radius: 50%}
+</style>
+	<div class="wrap">
+		<header>
+			<span ui-sref="{{data}}"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ng-click="click()" data-value="1"><img src="images/icon_27@2x.png" alt=""><span>{{a}}</span></a>
+			<h1>{{b}}</h1>
+		</header>
+		<main id="main">
+			<div>
+				<input type="text" placeholder="小时代" class="solo">
+				<div class="main_inner">
+					<div class="line1">
+						<a>
+							<dl class="mode1">
+								<dt ng-click="click2(0)">
+									<img src="images/pic(1).jpg" alt="">
+									<div class='dle' ng-if="div[0]"><span>X</span></div>
+								</dt>
+								<dd>幻城</dd>
+							</dl>
+						</a>
+						<a>
+							<dl class="mode1">
+								<dt ng-click="click2(1)">
+									<img src="images/pic(2).jpg" alt="">
+									<div class='dle' ng-if="div[1]"><span>X</span></div>
+								</dt>
+								<dd>幻城</dd>
+							</dl>
+						</a>
+						<a>
+							<dl class="mode1">
+								<dt ng-click="click2(2)">
+									<img src="images/pic(3).jpg" alt="">
+									<div class='dle' ng-if="div[2]"><span>X</span></div>
+								</dt>
+								<dd>幻城</dd>
+							</dl>
+						</a>
+					</div>
+					<div class="line1">
+						<a>
+							<dl class="mode1">
+								<dt ng-click="click2(3)">
+									<img src="images/pic(1).png" alt="">
+									<div class='dle' ng-if="div[3]"><span>X</span></div>
+								</dt>
+								<dd>幻城</dd>
+							</dl>
+						</a>
+						<a>
+							<dl class="mode1">
+								<dt><div id="pic"></div></dt>
+								<dd></dd>
+							</dl>
+						</a>
+						<a>
+							<dl class="mode1">
+							</dl>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="solo" ng-if="show">
+			<input type="button" value="移出书架"><input type="button" value="查看详情">
+		</div>
+	</div>

@@ -1,0 +1,11 @@
+h1.mode1{
+	line-height: .5rem;
+	text-align: center;
+	font-size: .13rem;
+	&.l{
+		text-align: left;
+	}
+	&.p{
+		padding: 0 .1rem
+	}
+}

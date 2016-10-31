@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/banner.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/main_inner.css">
+<link rel="stylesheet" href="css/h1.mode1.css">
+<link rel="stylesheet" href="css/div.line1.css">
+<link rel="stylesheet" href="css/dl.mode1.css">
+<link rel="stylesheet" href="css/p.mode1.css">
+<link rel="stylesheet" href="css/span.link.css">
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="index"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>精选</h1>
+		</header>
+		<main id="main">
+			<div>
+				<nav>
+					<ul>
+						<li><a href="#">精选</a></li>
+						<li><a href="#">出版</a></li>
+						<li><a ui-sref="nanpin" class="act">男频</a></li>
+						<li><a ui-sref="nvpin">女频</a></li>
+						<li><a href="#">会员专区</a></li>
+					</ul>
+				</nav>
+				<div>
+					<a href="#" class="banner">
+						<img src="images/banner.jpg" alt="">
+					</a>
+				</div>
+				<div class="main_inner">
+					<h1 class="mode1">原创男生</h1>
+					<div class="line1">
+						<a href="#" ng-repeat="i in data.dlmode1d1">
+							<dl class="mode1">
+								<dt><img src="{{ i.img }}" alt=""></dt>
+								<dd>{{ i.text }}</dd>
+							</dl>
+						</a>
+					</div>
+					<p class="mode1"><a href="#">点击进入男频专区>></a></p>
+					<h1 class="mode1">会员专区</h1>
+					<div class="line1 b">
+						<a href="#" class="back1" ng-repeat="i in data.line1a1">
+							<span class="link">{{i.text}}</span>
+						</a>
+					</div>
+					<div class="line1">
+						<a href="#" class="back1" ng-repeat="i in data.line1a2">
+							<span class="link">{{i.text}}</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>

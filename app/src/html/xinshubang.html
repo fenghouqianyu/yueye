@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main_inner.css">
+<link rel="stylesheet" href="css/dl.mode2.css">
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="paihang"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>精选</h1>
+		</header>
+		<main id="main">
+			<div>
+				<div class="main_inner m b p" ng-repeat="i in data.dlmode2d1">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{
+								i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p1">{{i.p2}}</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="main_inner m b p" ng-repeat="i in data.dlmode2d2">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{
+								i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p1">{{i.p2}}</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div>
+				<!-- <div class="main_inner m b p">
+					<dl class="mode2">
+						<dt><a href="#"><img src="images/pic(3).jpg" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">风声</a></h1>
+							<p class="p1">书海苍生 | 当代小说</p>
+							<p class="p1">1245678订阅</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="main_inner m b p">
+					<dl class="mode2">
+						<dt><a href="#"><img src="images/pic(3).jpg" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">风声</a></h1>
+							<p class="p1">书海苍生 | 当代小说</p>
+							<p class="p1">1245678订阅</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="main_inner m b p">
+					<dl class="mode2">
+						<dt><a href="#"><img src="images/pic(3).jpg" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">风声</a></h1>
+							<p class="p1">书海苍生 | 当代小说</p>
+							<p class="p1">1245678订阅</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div> -->
+			</div>
+		</main>
+	</div>

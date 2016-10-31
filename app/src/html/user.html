@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+div.solo{height: 2rem;position: relative;}
+div.solo>a{position: absolute;right: .1rem;top: .1rem;}
+dl.solo{height:100%;padding: .17rem;background: #fff;border-bottom: rgba(211,211,211,1) 1px solid;}
+dl.solo dt{height: .8rem;width: .8rem;margin: .12rem auto;overflow: hidden;border-radius: 50%}
+dl.solo dt img{width: 100%}
+dl.solo dd{line-height: .25rem;text-align: center;}
+dl.solo dd img{width: .30rem;position: relative;top: .1rem}
+dl.solo dd a{color: rgba(240,43,26,1)}
+div.line{display: -webkit-flex;line-height: .25rem;background: #fff;}
+div.line div{-webkit-flex-grow:1;padding: .12rem 0;text-align: center;}
+div.line div:nth-of-type(1){border-right: 1px solid rgba(211,211,211,1)}
+div.line a{color: #000}
+</style>
+	<div class="wrap">
+		<header>
+			<span id="back"ui-sref="admain"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ui-sref="qiandao"><span>签到</span></a>
+			<h1>个人中心</h1>
+		</header>
+		<main id="main">
+			<div>
+				<div class="solo">
+					<a ui-sref="zhiliao">个人资料</a>
+					<dl class="solo">
+						<dt><img src="{{data.user.img}}" alt=""></dt>
+						<dd>
+							<p>{{data.user.number}}</p>
+							<p><img src="images/icon_14@2x.png" alt=""><a href="#">添加个人简介</a></p>
+						</dd>
+					</dl>
+				</div>
+				<div class="line">
+					<div>
+						<a ui-sref="guanzhu">
+							<p>关注</p>
+							<p>1</p>
+						</a>
+					</div>
+					<div>
+						<a ui-sref="taolunqu">
+							<p>讨论区</p>
+							<p>1</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>

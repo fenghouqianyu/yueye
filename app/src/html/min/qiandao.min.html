@@ -1,0 +1,17 @@
+<link rel=stylesheet href=css/reset.css><link rel=stylesheet href=css/main.css><link rel=stylesheet href=css/h1.mode1.css><style>
+div.solo{display: -webkit-flex;padding: .05rem;}
+div.solo div{background: #fff;-webkit-flex-grow:1;margin: 0 .05rem;text-align: center;position: relative;line-height: .4rem;}
+div.solo div span{position: absolute;right: 0;bottom: 0;color: green;line-height: .12rem;display: none;}
+div.solo .tac{color: rgba(204,204,204,1);}
+div.solo .tac span{display: block;}
+div.solo .n{opacity: 0}
+</style><div class=wrap><header><span id=back ui-sref=user><img src=images/icon_02@2x.png></span> <a ui-sref=shujia><img src=images/icon_03@2x.png><span>书架</span></a><h1>签到</h1></header><main id=main><div><h1 class="mode1 l p">6月</h1><div class=solo ng-repeat="i in data.qiandao"><div ng-repeat="k in i" class={{k.class}}>{{k.text}}<span>√</span></div></div></div></main></div><script>
+window.onload = function (argument) {
+	new IScroll("#main",{
+		click:true
+	})
+}
+document.getElementById("back").addEventListener("touchend",function (argument) {
+	history.go(-1)
+})
+</script>

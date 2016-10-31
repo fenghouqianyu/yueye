@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/banner.css">
+<style>
+div.solo{padding: .1rem;background: #fff;border-bottom: 1px solid rgba(211,211,211,1)}
+div.solo.n{border: none;}
+dl.solo{display: -webkit-flex;padding: .1rem 0;}
+dl.solo dt{width: .4rem;height: .4rem;border-radius: 50%;overflow: hidden;margin-right: .1rem;}
+dl.solo dt img{width: 100%}
+dl.solo dd{line-height: .2rem;}
+dl.solo dd p:nth-of-type(2){color: #ccc}
+p.solo{line-height: .2rem;}
+</style>
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="user"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>讨论区</h1>
+		</header>
+		<main id="main">
+			<div>
+				<div>
+					<a href="#" class="banner">
+						<img src="images/banner.jpg" alt="">
+					</a>
+				</div>
+				<div class="solo" ng-repeat="i in data.dlmode2d1">
+					<dl class="solo">
+						<dt><img src="{{
+								i.img}}" alt=""></dt>
+						<dd>
+							<p>{{i.h1}}</p>
+							<p>3分钟</p>
+						</dd>
+					</dl>
+					<p class="solo">{{i.p2}}</p>
+				</div>
+				<div class="solo" ng-repeat="i in data.dlmode2d2">
+					<dl class="solo">
+						<dt><img src="{{
+								i.img}}" alt=""></dt>
+						<dd>
+							<p>{{i.h1}}</p>
+							<p>3分钟</p>
+						</dd>
+					</dl>
+					<p class="solo">{{i.p2}}</p>
+				</div>
+			</div>
+		</main>
+	</div>

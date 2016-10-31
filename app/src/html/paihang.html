@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/h1.mode1.css">
+<link rel="stylesheet" href="css/dl.mode3.css">
+	<div class="wrap">
+		<header>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>排行</h1>
+		</header>
+		<main id="main">
+			<div>
+				<nav class="b">
+					<ul>
+						<li><a ui-sref="yuepiaobang"><dl>
+							<dt><img src="images/icon_04@2x.png" alt=""></dt>
+							<dd>月票榜</dd>
+						</dl></a></li>
+						<li><a ui-sref="xinshubang"><dl>
+							<dt><img src="images/icon_19@2x.png" alt=""></dt>
+							<dd>新书榜</dd>
+						</dl></a></li>
+						<li><a ui-sref="reshoubang"><dl>
+							<dt><img src="images/icon_20@2x.png" alt=""></dt>
+							<dd>热搜榜</dd>
+						</dl></a></li>
+					</ul>
+				</nav>
+				<h1 class="mode1 l p">女频</h1>
+				<dl ng-repeat="i in data.paihang" class="{{i.class}}">
+					<dt><img src="{{i.img}}" alt=""></dt>
+					<dd><span>{{i.text2}} ></span>{{i.text1}}</dd>
+				</dl>
+				<h1 class="mode1 l p">男频</h1>
+				<dl ng-repeat="i in data.paihang" class="{{i.class}}">
+					<dt><img src="{{i.img}}" alt=""></dt>
+					<dd><span>{{i.text2}} ></span>{{i.text1}}</dd>
+				</dl>
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<a ui-sref="index">
+						<dl>
+							<dt><img src="images/icon_23@2x.png" alt=""></dt>
+							<dd>精选</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="fenglei">
+						<dl>
+							<dt><img src="images/icon_09@2x.png" alt=""></dt>
+							<dd>分类</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="paihang">
+						<dl class="act">
+							<dt><img src="images/icon_25@2x.png" alt=""></dt>
+							<dd>排行</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="admain">
+						<dl>
+							<dt><img src="images/icon_13@2x.png" alt=""></dt>
+							<dd>我的</dd>
+						</dl>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>

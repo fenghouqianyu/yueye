@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/dl.mode3.css">
+<style>
+dl.solo{padding: .1rem;margin-bottom: .1rem;display: -webkit-flex;background: #fff;}
+dl.solo dt{width: .4rem;height: .4rem;border-radius: 50%;overflow: hidden;margin-right: .1rem;}
+dl.solo dt img{width: 100%}
+dl.solo dd{padding: .08rem 0;}
+dl.solo dd a{float: left;line-height: .22rem;padding: 0 .05rem;height: 100%;border: 1px solid red;color: #000}
+a.b{color: #000}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>我的</h1>
+		</header>
+		<main id="main">
+			<div>
+				<dl class="solo">
+					<dt><img src="{{data.user.img}}" alt=""></dt>
+					<dd><a ui-sref="denglu">立即登录</a></dd>
+				</dl>
+				<a ui-sref="user" class="b">
+					<dl class="mode3">
+						<dt><img src="images/icon_06@2x.png" alt=""></dt>
+						<dd><span>></span>个人中心</dd>
+					</dl>
+				</a>
+				<a ui-sref="fankui" class="b">
+					<dl class="mode3">
+						<dt><img src="images/icon_08@2x.png" alt=""></dt>
+						<dd><span>></span>问题反馈</dd>
+					</dl>
+				</a>
+				<a ui-sref="shezhi" class="b">
+					<dl class="mode3">
+						<dt><img src="images/icon_10@2x.png" alt=""></dt>
+						<dd><span>></span>书城设置</dd>
+					</dl>
+				</a>
+				<a ui-sref="shouchang" class="b">
+					<dl class="mode3 n">
+						<dt><img src="images/icon_12@2x.png" alt=""></dt>
+						<dd><span>></span>我的收藏</dd>
+					</dl>
+				</a>
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<a ui-sref="index">
+						<dl>
+							<dt><img src="images/icon_23@2x.png" alt=""></dt>
+							<dd>精选</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="fenglei">
+						<dl>
+							<dt><img src="images/icon_09@2x.png" alt=""></dt>
+							<dd>分类</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="paihang">
+						<dl>
+							<dt><img src="images/icon_11@2x.png" alt=""></dt>
+							<dd>排行</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="admain">
+						<dl class="act">
+							<dt><img src="images/icon_26@2x.png" alt=""></dt>
+							<dd>我的</dd>
+						</dl>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>

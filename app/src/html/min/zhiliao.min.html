@@ -1,0 +1,11 @@
+<link rel=stylesheet href=css/reset.css><link rel=stylesheet href=css/main.css><style>
+div.solo{padding: .1rem;line-height: .3rem;background: #fff;border-bottom: 1px solid rgba(211,211,211,1)}
+div.solo>*{float: right;color: rgba(153,153,153,1);}
+div.solo.n{border: none;}
+div.pic{width: .3rem;height: .3rem;border-radius: 50%;overflow: hidden;}
+div.pic img{width: 100%;}
+input{display: none;}
+label{display: inline-block;width: .15rem;height: .15rem;border-radius: 50%;border: 1px solid rgba(211,211,211,1);position: relative;top: .03rem;margin-right: .08rem;margin-left: .15rem;}
+input:checked + label{background: rgba(242,42,26,1);border: none;}
+b{font-weight: normal;}
+</style><div class=wrap><header><span id=back ui-sref=user><img src=images/icon_02@2x.png></span> <a ui-sref=shujia><img src=images/icon_03@2x.png><span>书架</span></a><h1>精选</h1></header><main id=main><div><div class=solo><span>{{data.user.number}}</span> 帐号</div><div class=solo><div class=pic><img src={{data.user.img}}></div>头像</div><div class=solo><a ui-sref=nicheng>{{data.user.name}} ></a> 昵称</div><div class=solo><span><input type=radio name=sex id=sex1 ng-checked=data.user.sex><label for=sex1></label><b>女</b> <input type=radio name=sex id=sex2 ng-checked=!data.user.sex><label for=sex2></label><b>男</b></span> 性别</div><div class=solo><a ui-sref=shengri>{{data.user.date}} ></a> 生日</div><div class=solo><a ui-sref=diqu>{{data.user.addr}} ></a> 地区</div><div class="solo n"><a ui-sref=jianjie>{{data.user.jianjie}} ></a> 个人简介</div></div></main></div>

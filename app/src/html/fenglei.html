@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/main_inner.css">
+<link rel="stylesheet" href="css/div.line2.css">
+<link rel="stylesheet" href="css/p.mode2.css">
+	<div class="wrap">
+		<header>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>精选</h1>
+		</header>
+		<main id="main">
+			<div>
+				<p class="mode2"><a ui-sref="pianhao">阅读偏好设置</a><img src="images/icon_01@2x.png" alt=""></p>
+				<div class="main_inner">
+					<div class="line2" ng-repeat="i in data.list">
+						<a ng-repeat="k in i" ui-sref="{{k.url}}">{{k.text}}</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<a ui-sref="index">
+						<dl>
+							<dt><img src="images/icon_23@2x.png" alt=""></dt>
+							<dd>精选</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="fenglei">
+						<dl class="act">
+							<dt><img src="images/icon_24@2x.png" alt=""></dt>
+							<dd>分类</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="paihang">
+						<dl>
+							<dt><img src="images/icon_11@2x.png" alt=""></dt>
+							<dd>排行</dd>
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a ui-sref="admain">
+						<dl>
+							<dt><img src="images/icon_13@2x.png" alt=""></dt>
+							<dd>我的</dd>
+						</dl>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>

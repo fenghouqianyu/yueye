@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ,CACP,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,KAAK,CACd,YAAG,CACF,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,KAAK",
+"sources": ["banner.scss"],
+"names": [],
+"file": "banner.css"
+}

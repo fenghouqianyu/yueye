@@ -1,0 +1,19 @@
+div.line1{
+	display: -webkit-flex;
+	&>*{
+		margin: 0 .05rem;
+		-webkit-flex:1 0;
+		display: block;
+	}
+	&.b{
+		margin-bottom: .18rem;
+	}
+	&>.back1{
+		background: url(../images/bg1.jpg);
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+	a{
+		color: #000
+	}
+}

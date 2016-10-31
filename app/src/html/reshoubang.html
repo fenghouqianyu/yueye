@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main_inner.css">
+<link rel="stylesheet" href="css/dl.mode2.css">
+<link rel="stylesheet" href="css/nav.css">
+<style>
+nav.solo{margin: .1rem .35rem;background: #fff;line-height: .3rem;border-radius: .05rem;overflow: hidden;}
+nav.solo .act{background: rgba(242,43,24,1);}
+nav.solo .act a{color: #fff}
+</style>
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="paihang"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ui-sref="shujia"><img src="images/icon_03@2x.png" alt=""><span>书架</span></a>
+			<h1>精选</h1>
+		</header>
+		<main id="main">
+			<div>
+				<nav>
+					<ul>
+						<li><a href="#" class="act">热搜榜</a></li>
+						<li><a href="#">完结榜</a></li>
+						<li><a ui-sref="mianfeibang">免费榜</a></li>
+					</ul>
+				</nav>
+				<nav class="solo">
+					<ul>
+						<li><a href="#">周榜</a></li>
+						<li class="act"><a href="#">年榜</a></li>
+					</ul>
+				</nav>
+				<div class="main_inner m b p" ng-repeat="i in data.dlmode2d1">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{
+								i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p1">{{i.p2}}</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="main_inner m b p" ng-repeat="i in data.dlmode2d2">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{
+								i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p1">{{i.p2}}</p>
+							<p class="p1">上架时间：2015-07-12</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</main>
+	</div>

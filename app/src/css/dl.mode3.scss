@@ -1,0 +1,25 @@
+dl.mode3{
+	line-height: .45rem;
+	padding: 0 .1rem;
+	display: -webkit-flex;
+	background: #fff;
+	border-bottom: 1px solid rgba(211,211,211,1);
+	dt{
+		width: .20rem;
+		margin-right: .1rem;
+		img{
+			width: 100%;
+			margin: auto
+		}
+	}
+	dd{
+		-webkit-flex-grow:1;
+		span{
+			float: right;
+			color: rgba(211,211,211,1);
+		}
+	}
+	&.n{
+		border-bottom: none;
+	}
+}

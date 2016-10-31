@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+h1.solo{padding: .1rem;color: red;font-size: .14rem}
+div.solo{padding: .05rem}
+div.solo div.soloLine{display: -webkit-flex;}
+div.solo div.soloLine a{margin: .05rem;line-height: .4rem;text-align: center;-webkit-flex-grow:1;background: #fff;display: block;color: #000}
+div.solo div.soloLine a.n{opacity: 0}
+</style>
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="yuepiaobang"><img src="images/icon_02@2x.png" alt=""></span>
+			<h1>查看往期</h1>
+		</header>
+		<main id="main">
+			<div>
+				<h1 class="solo">2016年</h1>
+				<div class="solo">
+					<div class="soloLine" ng-repeat="i in data.wangqi">
+						<a ng-repeat="k in i" href="{{k.url}}" class="{{k.class}}">{{k.text}}</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+<script>
+window.onload = function (argument) {
+	new IScroll("#main",{
+		click:true
+	})
+}
+document.getElementById("back").addEventListener("touchend",function (argument) {
+	history.go(-1)
+})
+</script>

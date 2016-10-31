@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/box.mode1.css">
+<link rel="stylesheet" href="css/dl.mode3.css">
+<link rel="stylesheet" href="css/dl.mode2.css">
+<link rel="stylesheet" href="css/h1.mode1.css">
+<style>
+dl.mode3 dt{width: .25rem}
+dl.mode3 dd{padding: .05rem 0;line-height: .15rem;}
+dl.mode3 dd small{color: rgba(211,211,211,1);}
+dl.mode3 dd p:nth-of-type(2){color: rgba(211,211,211,1);}
+dl.mode3 dd p:nth-of-type(2) span{color: #000}
+dl.mode3 dd p:nth-of-type(2) span img{width: .2rem}
+</style>
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="paihang"><img src="images/icon_02@2x.png" alt=""></span>
+			<h1>月票榜</h1>
+		</header>
+		<main id="main">
+			<div>
+				<dl class="mode3 n">
+					<dt><img src="images/icon_04@2x.png" alt=""></dt>
+					<dd><p>06月 月票榜 |<small>实事更新</small></p>
+					<p><b ui-sref="jianglishuoming">月票奖励计划</b><span ui-sref="wangqi"><img src="images/icon_05@2x.png" alt="">查看往期 ></span></p></dd>
+				</dl>
+				<h1 class="mode1">总榜</h1>
+				<div class="mode1 nm" ng-repeat="i in data.dlmode2d1">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p2">52194张</p>
+						</dd>
+					</dl>
+				</div>
+				<h1 class="mode1">女生</h1>
+				<div class="mode1 nm" ng-repeat="i in data.dlmode2d2">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p2">52194张</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="mode1 nm">
+					<dl class="mode2">
+						<dt><a href="#"><img src="images/pic(3).jpg" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">星武神决</a></h1>
+							<p class="p1">发飙的蜗牛 | 东方玄幻</p>
+							<p class="p2">52194张</p>
+						</dd>
+					</dl>
+				</div>
+				<h1 class="mode1">男生</h1>
+				<div class="mode1 nm">
+					<dl class="mode2">
+						<dt><a href="#"><img src="images/pic(3).jpg" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">星武神决</a></h1>
+							<p class="p1">发飙的蜗牛 | 东方玄幻</p>
+							<p class="p2">52194张</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="mode1 nm" ng-repeat="i in data.dlmode2d1">
+					<dl class="mode2">
+						<dt><a href="#"><img src="{{i.img}}" alt=""></a></dt>
+						<dd>
+							<h1><a href="#">{{i.h1}}</a></h1>
+							<p class="p1">{{i.p1}}</p>
+							<p class="p2">52194张</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</main>
+	</div>

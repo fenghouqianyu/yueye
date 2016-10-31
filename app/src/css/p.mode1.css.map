@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO,CACN,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,KAAK,CAChB,SAAC,CACA,KAAK,CAAE,IAAI,CAEZ,SAAG,CACF,UAAU,CAAE,IAAI",
+"sources": ["p.mode1.scss"],
+"names": [],
+"file": "p.mode1.css"
+}

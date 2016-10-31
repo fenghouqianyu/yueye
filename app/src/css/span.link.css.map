@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS,CACR,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,eAAc,CAC1B,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,KAAK,CACd,UAAU,CAAE,MAAM",
+"sources": ["span.link.scss"],
+"names": [],
+"file": "span.link.css"
+}

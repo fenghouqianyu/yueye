@@ -1,0 +1,16 @@
+<link rel=stylesheet href=css/reset.css><link rel=stylesheet href=css/main.css><style>
+div.solo{padding: .1rem;line-height: .3rem;background: #fff;border-bottom: 1px solid rgba(211,211,211,1)}
+div.solo>*{float: right;color: rgba(153,153,153,1);}
+div.solo.n{border: none;}
+div.pic{width: .33rem;height: .2rem;border-radius: .1rem;overflow: hidden;}
+div.pic img{width: 100%;}
+b{display: inline-block;width: .15rem;height: .15rem;border-radius: 50%;position: relative;top: .03rem;margin: .02rem}
+b:nth-of-type(1){background: pink;}
+b:nth-of-type(2){background: green;}
+b:nth-of-type(3){background: blue;}
+a.b{color: #000}
+</style><div class=wrap><header><span id=back ui-sref=admain><img src=images/icon_02@2x.png></span> <a ui-sref=shujia><img src=images/icon_03@2x.png><span>书架</span></a><h1>设置</h1></header><main id=main><div><div class=solo><div class=pic><img src=images/button_03.png></div>wifi传输</div><div class=solo><span>1.0.1</span> 当前版本</div><div class=solo><span>></span> 关于我们</div><div class=solo><span><b></b> <b></b> <b></b></span> 更改主题</div><div class=solo><div class=pic><img src=images/button_03.png></div>使用4G或GPRS时下载书</div><a ui-sref=mima class=b><div class=solo><span>></span> 登录密码设置</div></a></div></main></div><script>
+document.getElementById("back").addEventListener("touchend",function (argument) {
+	history.go(-1)
+})
+</script>

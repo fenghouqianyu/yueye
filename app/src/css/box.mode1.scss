@@ -1,0 +1,11 @@
+div.mode1{
+	padding: .1rem;
+	margin-bottom: .15rem;
+	background: #fff;
+	&.n{
+		background: none;
+	}
+	&.nm{
+		margin: 0
+	}
+}

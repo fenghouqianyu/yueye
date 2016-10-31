@@ -1,0 +1,15 @@
+dl.mode1{
+	width: 100%;
+	dt{
+		overflow: hidden;
+		height: 1.45rem;
+		img{
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	dd{
+		line-height: .25rem;
+		text-align: center;
+	}
+}

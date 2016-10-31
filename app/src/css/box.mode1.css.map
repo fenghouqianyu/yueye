@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS,CACR,OAAO,CAAE,KAAK,CACd,aAAa,CAAE,MAAM,CACrB,UAAU,CAAE,IAAI,CAChB,WAAG,CACF,UAAU,CAAE,IAAI,CAEjB,YAAI,CACH,MAAM,CAAE,CAAC",
+"sources": ["box.mode1.scss"],
+"names": [],
+"file": "box.mode1.css"
+}

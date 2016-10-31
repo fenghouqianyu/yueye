@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main_inner.css">
+<style>
+body{background: url("images/pic(1).png");-webkit-background-size: 100%;background-size: 100%;}
+.wrap{background: rgba(0,0,0,.45);}
+header{background: none;}
+main{background: none;}
+p.solo{display: -webkit-flex;border-radius: .05rem;overflow: hidden;margin-bottom: .1rem;}
+p.solo .text{-webkit-flex-grow:1;background: rgba(255,255,255,.3);border: none;height: .42rem;line-height: .42rem;color: #fff;text-indent: .1rem;
+}
+p.solo button{background: rgba(242,42,26,1);border: none;padding: 0 .1rem;color: #fff}
+.btn{background: rgba(255,255,255,.3);height: .42rem;line-height: .42rem;margin: 0 .25rem;border: none;display: block;-webkit-flex-grow:1;color: #fff;border-radius: .05rem}
+p.yj{line-height: .2rem;color: #fff;text-align: center;}
+p.yj a{color: red}
+</style>
+	<div class="wrap">
+		<header>
+			<span id="back" ui-sref="admain"><img src="images/icon_02@2x.png" alt=""></span>
+			<a ui-sref="denglu"><span>登录</span></a>
+			<h1>注册</h1>
+		</header>
+		<main id="main">
+			<div>
+				<div class="main_inner">
+					<p class="solo"><input type="text" class="text" placeholder="请输入手机号码" ng-model="tel"></p>
+					<p class="solo"><input type="text" class="text" placeholder="请输入信息验证码" ng-model="text"><button ng-click="test()">获取验证码</button></p>
+					<p class="solo"><input type="button" value="注册" class="btn" ng-click="zhuche()"></p>
+					<p class="yj">使用本机号码<a href="#">一键登录</a></p>
+				</div>
+			</div>
+		</main>
+	</div>

@@ -1,0 +1,17 @@
+div.line2{
+	display: -webkit-flex;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+	margin-bottom: .15rem;
+	a{
+		width: .82rem;
+		line-height: .30rem;
+		text-align: center;
+		background: #fff;
+		color: #000;
+		border: 1px solid rgba(160,160,160,1);
+		display: block;
+		font-size: .11rem
+	}
+
+}

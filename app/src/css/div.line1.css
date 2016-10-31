@@ -1,0 +1,16 @@
+div.line1 {
+  display: -webkit-flex; }
+  div.line1 > * {
+    margin: 0 .05rem;
+    -webkit-flex: 1 0;
+    display: block; }
+  div.line1.b {
+    margin-bottom: .18rem; }
+  div.line1 > .back1 {
+    background: url(../images/bg1.jpg);
+    -webkit-background-size: 100%;
+    background-size: 100%; }
+  div.line1 a {
+    color: #000; }
+
+/*# sourceMappingURL=div.line1.css.map */
