@@ -12,11 +12,7 @@ function index ($scope) {
 		dataType:"jsonp",
 		async:1,
 		success:function (res) {
-			if($scope.data.code != res.code){
-				window.localStorage.data = window.JSON.stringify(res)
-			}else if(!window.localStorage.data){
-				window.localStorage.data = window.JSON.stringify(res)
-			}
+			window.localStorage.data = window.JSON.stringify(res)
 		}
 	})
 	setTimeout(function (argument) {
