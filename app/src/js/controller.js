@@ -3,17 +3,9 @@ angular.module("myapp")
 	.controller("login",login)
 	.controller("zhuche",zhuche)
 	.controller("shujia",shujia);
-function index ($scope) {
-	if(window.localStorage.data){
-		$scope.data = window.JSON.parse(window.localStorage.data)
-	}
-	$.ajax({
-		url:"http://127.0.0.1:3030/getindexdata?callback=?",
-		dataType:"jsonp",
-		async:1,
-		success:function (res) {
-			window.localStorage.data = window.JSON.stringify(res)
-		}
+function index ($scope,$http) {
+	$http.jsonp("http://127.0.0.1:3030/getindexdata?callback='JSON_CALLBACK'").success(function (a) {
+		$scope.data = a
 	})
 	setTimeout(function (argument) {
 		new IScroll("#main",{
